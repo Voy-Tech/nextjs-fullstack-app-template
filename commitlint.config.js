@@ -32,7 +32,7 @@ module.exports = {
       [
         'build',
         'chore',
-        'ci',
+        'ci', // continuous integration process
         'docs',
         'feat',
         'fix',
