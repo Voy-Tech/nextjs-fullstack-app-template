@@ -1,4 +1,5 @@
 // @ts-check
+import { RouterContext } from 'next/dist/shared/lib/router-context';
 import * as NextImage from 'next/image';
 import '../styles/globals.css';
 
@@ -44,4 +45,8 @@ export const parameters = {
     },
   },
   viewport: { viewports: customViewports },
+  layout: 'fullscreen',
+  nextRouter: {
+    Provider: RouterContext.Provider,
+  },
 };
